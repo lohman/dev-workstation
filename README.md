@@ -1,2 +1,1 @@
-# dev-workstation
-This is how I setup my dev workstation on Windows with WSL2
+Update the developer laptop with standard build
