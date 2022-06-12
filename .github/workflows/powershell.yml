@@ -17,7 +17,7 @@ jobs:
       contents: read # for actions/checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     name: PSScriptAnalyzer
-    runs-on: christopher-dev-01
+    runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v3
 
