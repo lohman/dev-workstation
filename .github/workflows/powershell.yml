@@ -10,6 +10,10 @@ on:
     
 permissions:
   contents: read
+  
+defaults:
+  run:
+    shell: poweshell
 
 jobs:
   build:
@@ -18,7 +22,6 @@ jobs:
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     name: PSScriptAnalyzer
     runs-on: [self-hosted]
-    shell: powershell
     steps:
       - uses: actions/checkout@v3
       - name: Run PSScriptAnalyzer
