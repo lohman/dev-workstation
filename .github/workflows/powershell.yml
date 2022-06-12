@@ -19,6 +19,7 @@ jobs:
     name: PSScriptAnalyzer
     runs-on: [self-hosted]
     steps:
+    shell: powershell
       - uses: actions/checkout@v3
 
       - name: Run PSScriptAnalyzer
